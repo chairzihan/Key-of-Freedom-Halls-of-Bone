@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcb55k31thdbl"]
+
+[ext_resource type="Script" uid="uid://c8r07t2mo1a8y" path="res://the_fool_shall_byf.gd" id="1_3x1fk"]
+[ext_resource type="Texture2D" uid="uid://ctrshiw3or1mg" path="res://Assets/CloseButtn.PNG" id="1_bkm5l"]
+
+[node name="TheFoolShallBYF" type="Node2D"]
+script = ExtResource("1_3x1fk")
+
+[node name="returnButton" type="TextureButton" parent="."]
+offset_left = 5.0
+offset_top = 10.0
+offset_right = 184.0
+offset_bottom = 190.0
+texture_normal = ExtResource("1_bkm5l")
+ignore_texture_size = true
+stretch_mode = 0

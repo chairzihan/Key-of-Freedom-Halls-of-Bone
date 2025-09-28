@@ -1,3 +1,45 @@
-[gd_scene format=3 uid="uid://c5vni5mearcnc"]
+[gd_scene load_steps=6 format=3 uid="uid://c5vni5mearcnc"]
+
+[ext_resource type="Script" uid="uid://vntj1wa0j052" path="res://world.gd" id="1_tlwt5"]
+[ext_resource type="Texture2D" uid="uid://v8kc0qtsxoxk" path="res://Assets/MapBG.PNG" id="2_036b0"]
+[ext_resource type="Texture2D" uid="uid://imlr8mb30jts" path="res://Assets/Is1 (1).PNG" id="3_036b0"]
+[ext_resource type="Texture2D" uid="uid://bkew5k4codr8j" path="res://Assets/Is2 (1).png" id="4_dwbse"]
+[ext_resource type="Texture2D" uid="uid://d1pdsmmw3vivr" path="res://Assets/Is3 (1).PNG" id="5_pkg7o"]
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_tlwt5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 3.0
+offset_top = -1.0
+offset_right = 1959.0
+offset_bottom = 1082.0
+texture = ExtResource("2_036b0")
+
+[node name="dreamIsland" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 405.0
+offset_right = 690.0
+offset_bottom = 1033.0
+texture_normal = ExtResource("3_036b0")
+
+[node name="fireIsland" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 676.0
+offset_top = 63.0
+offset_right = 1313.0
+offset_bottom = 603.0
+texture_normal = ExtResource("4_dwbse")
+
+[node name="woodsIsland" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1128.0
+offset_top = 540.0
+offset_right = 1859.0
+offset_bottom = 1034.0
+texture_normal = ExtResource("5_pkg7o")
+
+[connection signal="pressed" from="TextureRect/dreamIsland" to="." method="_on_dream_island_pressed"]
+[connection signal="pressed" from="TextureRect/fireIsland" to="." method="_on_fire_island_pressed"]
+[connection signal="pressed" from="TextureRect/woodsIsland" to="." method="_on_woods_island_pressed"]

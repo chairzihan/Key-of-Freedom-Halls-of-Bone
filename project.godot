@@ -13,7 +13,7 @@ config_version=5
 config/name="Key of Freedom, Halls of Bone"
 run/main_scene="uid://xpc3k5a10dmy"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Assets/icon.svg"
 
 [display]
 

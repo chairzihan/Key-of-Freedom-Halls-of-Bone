@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ut2cfqr2cg1"]
+
+[ext_resource type="Texture2D" uid="uid://ctrshiw3or1mg" path="res://Assets/CloseButtn.PNG" id="1_fx6qu"]
+[ext_resource type="Script" uid="uid://d4jbjepp7a3yf" path="res://fire_fire.gd" id="1_jxeyw"]
+[ext_resource type="Script" uid="uid://c55d0w5dhpx85" path="res://return_button.gd" id="2_8bpag"]
+
+[node name="FireFire" type="Node2D"]
+script = ExtResource("1_jxeyw")
+
+[node name="returnButton" type="TextureButton" parent="."]
+offset_left = 5.0
+offset_top = 10.0
+offset_right = 184.0
+offset_bottom = 190.0
+texture_normal = ExtResource("1_fx6qu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("2_8bpag")
